@@ -54,3 +54,98 @@ main section.banner h1{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
     padding: 100px;
 }
+
+main section.receitas-principais .container {
+    min-height: 600px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main section.receitas-principais h2 {
+    color: #ffa000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: lowercase;
+}
+
+.lista-receitas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.lista-receitas article {
+    width: 345px;
+    text-align: center;
+}
+
+.lista-receitas .thumb {
+    width: 100%;
+    height: 245px;
+    background-color: orange;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lista-receitas article h3 {
+    font-size: 26px;
+}
+
+.lista-receitas article a {
+    text-decoration: none;  
+    background-color: #176902;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 25px;
+}
+
+section.banner-secundario {
+    background-image: url(../imagens/foto-avo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section.banner-secundario .container {
+    min-height: 600px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.banner-secundario .container h2 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 62px;
+    color: #fff;
+}
+
+section.banner-secundario .container p {
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 450px;
+}
+
+footer {
+    background-color: #ffa107;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+footer .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer p {
+    padding: 0 15px;
+}
