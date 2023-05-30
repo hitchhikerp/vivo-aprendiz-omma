@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -58,6 +62,7 @@ main section.banner h1{
 main section.receitas-principais .container {
     min-height: 600px;
     width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -73,15 +78,18 @@ main section.receitas-principais h2 {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .lista-receitas article {
     width: 345px;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .lista-receitas .thumb {
     width: 100%;
+    max-width: 100%;
     height: 245px;
     background-color: orange;
     background-size: cover;
@@ -111,6 +119,7 @@ section.banner-secundario {
 section.banner-secundario .container {
     min-height: 600px;
     width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -128,6 +137,7 @@ section.banner-secundario .container p {
     font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 450px;
+    max-width: 100%;
 }
 
 footer {
@@ -139,6 +149,7 @@ footer {
 
 footer .container {
     width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
@@ -148,4 +159,214 @@ footer .container {
 
 footer p {
     padding: 0 15px;
+}
+
+main .container {
+    padding: 10px 30px;
+}
+
+main section.todas-receitas .container {
+    min-height: 600px;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+main section.todas-receitas h2 {
+    color: #ffa000;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: lowercase;
+}
+
+main section.risoto-abobora h2 {
+    color: #ffa000;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: lowercase;
+}
+
+.descrição {
+    display: flex;
+}
+
+.preparo {
+    width: 600px;
+    max-width: 100%;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.preparo p {
+    margin: 0;
+}
+
+.descrição p {
+    border: 1px solid #176902;
+    color: #176902;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 5px 25px;
+    margin: 20px 10px;
+}
+
+.banner-contato {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    background-image: url(../imagens/banner-contato.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-contato .container,
+section.contato .container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+}
+
+.banner-contato .container h1 {
+    color: #fff;
+    font-size: 70px;
+}
+
+.banner-vertical {
+    width: 30%;
+    max-width: 100%;
+    height: 700px;
+    background-image: url(../imagens/banner-vertical.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.formulario {
+    border: 1px solid #FFA000;
+    border-radius: 20px;
+    margin: 0 30px;
+    padding: 30px;
+    width: 70%;
+    max-width: 100%;
+}
+
+.formulario h2 {
+    color: #FFA000;
+}
+
+.formulario form input {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ffa000;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.formulario form textarea {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ffa000;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 5px 0;
+    height: 200px;
+}
+
+.formulario form button {
+    font-size: 16px;
+    background-color: #ffa000;
+    color: #fff;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 500;
+    border: 1px solid #ffa000;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+@media (max-width: 1100px) {
+    .container, 
+    .receita-interna {
+        width: 900px !important;
+        max-width: 100% !important;
+    }
+
+    main section.banner .container {
+        justify-content: flex-start;
+    }
+
+    .lista-receitas article {
+        width: 250px;
+    }
+
+    .receita-interna main {
+        width: 500px;
+    }
+
+    .receita-interna main iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+        .container,
+        .receita-interna {
+            width: 800px !important;
+            padding: 0 20px;
+        }
+
+        .lista-receitas article {
+            padding: 10px;
+        }
+}
+
+@media (max-width: 700px) {
+    .lista-receitas article {
+        width: 490px;
+    }
+
+    main section.banner {
+        background-position: center;
+    }
+
+    main section.banner .container {
+        justify-content: center;
+        align-items: end;
+    }
+
+    main section.banner .container h1 {
+       padding: 10px;
+    }
+
+    main section.todas-receitas h2 {
+        text-align: center;
+    }
+
+    main section.risoto-abobora h2 {
+        font-size: 45px;
+    }
+
+    section .container img {
+        max-width: 100%;
+    }
+
+    .banner-contato .container, 
+    section.contato .container {
+        padding: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .banner-vertical {
+        width: 100%;
+        height: 230px;
+        border-radius: 15px;
+    }
+
+    .formulario {
+        width: 100%;
+        margin: 25px 0;
+    }
 }
