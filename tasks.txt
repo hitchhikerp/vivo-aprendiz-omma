@@ -1,0 +1,4 @@
+Adicionar alt nas imagens de lista-receitas.html
+Criar as outras páginas de receitas individuais
+Colocar link no cards do aside da página de receitas individuais
+Ajustar a responsividade para telas de max-witdh 300px criando um novo media
